@@ -1,5 +1,5 @@
 import Button from '@/components/Button'
-import Countdown from '../Countdown'
+import Countdown from './Countdown'
 
 export default function Explorer() {
   return (

@@ -15,7 +15,8 @@ const config: Config = {
       },
       colors: {
         lightGrey: '#eeeeee',
-        royalBlue: '#2563EB'
+        royalBlue: '#2563EB',
+        black: '#202124'
       },
       fontFamily: {
         body: 'Google Sans'
