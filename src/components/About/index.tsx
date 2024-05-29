@@ -1,6 +1,14 @@
-import Button from '@/components/Button'
+import { useQuery } from '@apollo/client';
+
+import aboutQuery from '@/graphql/queries/about';
+
+import Button from '@/components/Button';
 
 export default function About() {
+  const { data, loading, error } = useQuery(aboutQuery);
+
+  console.log('data', data)
+
   return (
     <section id="about" className="border-2 border-solid border-lightGrey rounded-lg p-10 pb-24">
       <aside className="w-1/2">
@@ -9,5 +17,5 @@ export default function About() {
         <Button outline>Registre-se</Button>
       </aside>
     </section>
-  )
-}
+  );
+};
