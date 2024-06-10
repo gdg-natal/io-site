@@ -3,8 +3,8 @@ import Countdown from './Countdown'
 
 export default function Explorer() {
   return (
-    <section id="explorer">
-      <div className="container mx-auto grid grid-cols-2 py-16">
+    <section id="explorer" className="bg-[url('/images/explore-bg.png')] bg-bottom bg-no-repeat bg-contain">
+      <div className="container mx-auto grid grid-cols-2 py-16 pb-80">
         <aside>
           <Countdown />
         </aside>
