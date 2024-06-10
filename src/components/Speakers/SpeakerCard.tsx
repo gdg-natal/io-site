@@ -1,4 +1,10 @@
-export default function SpeakerCard({ name, description, title }) {
+interface ISpeakerCardProps {
+  name: string
+  description: string
+  title: string
+}
+
+export default function SpeakerCard({ name, description, title }: ISpeakerCardProps) {
   return (
     <li className="bg-lightGrey rounded-lg border-2 border-solid border-lightGrey">
       <div id="profile-photo" className="bg-black rounded-lg py-8">
