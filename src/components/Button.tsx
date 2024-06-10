@@ -1,15 +1,9 @@
 interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: keyof typeof BUTTON_COLORS,
-  outline?: boolean
+  outlined?: boolean
 }
 
-const BUTTON_COLORS = {
-  default: 'royalBlue'
-}
-
-export default function Button({ variant = 'default', children }: IButtonProps) {
-  const color = BUTTON_COLORS[variant]
-  const styles = `px-6 py-4 rounded-full bg-${color}`
+export default function Button({ outlined, children }: IButtonProps) {
+  const styles = `px-6 py-4 border-2 rounded-full ${outlined ? 'border-lightGrey bg-transparent' : 'border-transparent bg-royalBlue'}`
 
   return (
     <button className={styles}>

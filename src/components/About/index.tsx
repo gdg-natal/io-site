@@ -15,7 +15,7 @@ export default function About() {
       <aside className="w-1/2 p-10 pb-24">
         <h2 className="mb-4 text-4xl">{content?.title}</h2>
         <h3 className="mb-8 text-xl">{content?.content}</h3>
-        <Button outline>Registre-se</Button>
+        <Button outlined>Registre-se</Button>
       </aside>
     </section>
   );
