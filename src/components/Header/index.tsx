@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import logo from '@/images/logo.png'
+import logo from '@/images/logo.svg'
 
 export default function Header() {
   return (
