@@ -1,15 +1,23 @@
+
 import CountValue from "./CountValue"
 import { useCountdown } from '@/hooks/useCountdown'
-import parseMillsToTime from '@/utils/parseMillsToTime'
 
-export default function Countdown() {
-  const countdown = useCountdown('2024-06-15T04:00:00')
-  const { seconds } = parseMillsToTime(countdown)
+const items = [
+  { label: 'Dias', field: 'days' },
+  { label: 'Horas', field: 'hours' },
+  { label: 'Minutos', field: 'minutes' },
+  { label: 'Segundos', field: 'seconds' },
+]
+
+export default function Countdown({ eventTime, isLoading }) {
+  if (isLoading) return null
+
+  const countdown = useCountdown(eventTime)
 
   return (
     <ul className={`grid grid-rows-2 grid-cols-2 gap-8`}>
-      {[0, 1, 2, 3].map((value, index) => (
-        <CountValue key={index} label="Dias" index={index}><span>{seconds}</span></CountValue>
+      {items.map(({ label, field }, index) => (
+        <CountValue key={index} label={label} index={index}>{countdown[field]}</CountValue>
       ))}
     </ul>
   )
