@@ -1,12 +1,17 @@
 
 import CountValue from "./CountValue"
-import { useCountdown } from '@/hooks/useCountdown'
+import { useCountdown, TimeType } from '@/hooks/useCountdown'
 
 interface ICountdownProps {
   eventTime: string
 }
 
-const COUNTDOWN_ITEMS = [
+type ItemType = {
+  label: string,
+  field: 'days' | 'hours' | 'minutes' | 'seconds'
+}
+
+const COUNTDOWN_ITEMS: ItemType[] = [
   { label: 'Dias', field: 'days' },
   { label: 'Horas', field: 'hours' },
   { label: 'Minutos', field: 'minutes' },

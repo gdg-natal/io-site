@@ -1,5 +1,5 @@
 interface ICountValueProps {
-  children: string,
+  children: React.ReactNode,
   label: string,
   index: number
 }
