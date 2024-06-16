@@ -8,8 +8,6 @@ export default function Speakers() {
   const { data, loading, error } = useQuery(speakersQuery);
   const content = data?.speakers?.data?.map((item: any) => item.attributes.items[0])
 
-  console.log('content', content)
-
   return (
     <section id="speakers">
       <h2 className="mb-8 text-4xl">Palestrantes</h2>
