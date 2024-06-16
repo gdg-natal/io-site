@@ -6,7 +6,13 @@ import speakersQuery from '@/graphql/queries/speakers';
 
 export default function Speakers() {
   const { data, loading, error } = useQuery(speakersQuery);
-  const content = data?.speakers?.data?.map((item: any) => item.attributes.items[0])
+  const content = data?.speakers?.data?.map((item: any) => {
+    const speaker = item.attributes.items[0]
+    return ({
+      ...speaker,
+      image: speaker?.image?.data?.attributes?.formats?.small?.url
+    })
+  })
 
   return (
     <section id="speakers">

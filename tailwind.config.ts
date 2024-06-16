@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        aboutImage: "url('/assets/images/about-bg.png')"
+        aboutImage: "url('/images/about-bg.png')",
+        speakersBg: "url('/images/speakers-bg.png')"
       },
       colors: {
         lightGrey: '#eeeeee',
