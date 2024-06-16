@@ -1,6 +1,6 @@
 
 import CountValue from "./CountValue"
-import { useCountdown, TimeType } from '@/hooks/useCountdown'
+import { useCountdown } from '@/hooks/useCountdown'
 
 interface ICountdownProps {
   eventTime: string
