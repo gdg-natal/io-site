@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client'
 
 const query = gql`
-  query {
-    about(id: 1) {
+  query GetAbout {
+    about {
       data {
         attributes {
           title

@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client'
 
 const query = gql`
-  query {
+  query GetSponsors {
     sponsors {
       data {
         id

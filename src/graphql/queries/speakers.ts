@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client'
 
 const query = gql`
-  query {
+  query GetSpeakers {
     speakers {
       data {
         id
@@ -10,6 +10,13 @@ const query = gql`
             name
             title
             description
+            image {
+              data {
+                attributes {
+                  formats
+                }
+              }
+            }
           }
         }
       }
