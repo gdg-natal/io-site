@@ -8,7 +8,7 @@ export default function Sponsors() {
   const { data, loading, error } = useQuery(sponsorsQuery);
   const content = data?.sponsors?.data?.map((item: any) => item.attributes.items[0])
 
-  const renderSponsor = ({ title, image }) => {
+  const renderSponsor = ({ title, image }: { title: string, image: any }) => {
     const imageUrl = image?.data?.attributes?.formats?.medium?.url
 
     return (

@@ -10,7 +10,7 @@ export default function Location() {
           Lagoa Nova, Natal-RN<br />
           59000000
         </address>
-        <Button outlined>Ver no mapa</Button>
+        <Button outlined href="#">Ver no mapa</Button>
       </div>
     </section>
   )

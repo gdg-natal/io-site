@@ -5,7 +5,7 @@ const HOUR_IN_SECONDS = MINUTE_IN_SECONDS * 60
 const DAY_IN_SECONDS = HOUR_IN_SECONDS * 24
 
 export function useCountdown(target: string) {
-  const interval = useRef<NodeJS.Timeout>(null)
+  const interval = useRef<NodeJS.Timeout | null>(null)
   const currentTime = new Date()
   const eventTime = new Date(target)
 
