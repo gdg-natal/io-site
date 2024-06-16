@@ -14,7 +14,7 @@ export default function Sponsors() {
     return (
       <li key={title} className="w-1/5 h-32">
         <a href="#">
-          <img src={`http://api.gdg.natal.br${imageUrl}`} alt={title} className="w-full h-full" />
+          <img src={imageUrl} alt={title} className="w-full h-full" />
         </a>
       </li>
     )
