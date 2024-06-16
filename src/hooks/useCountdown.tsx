@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 const MINUTE_IN_SECONDS = 60
 const HOUR_IN_SECONDS = MINUTE_IN_SECONDS * 60

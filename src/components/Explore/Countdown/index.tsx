@@ -9,9 +9,7 @@ const items = [
   { label: 'Segundos', field: 'seconds' },
 ]
 
-export default function Countdown({ eventTime, isLoading }) {
-  if (isLoading) return null
-
+export default function Countdown({ eventTime }) {
   const countdown = useCountdown(eventTime)
 
   return (
