@@ -1,8 +1,8 @@
-import Image from "next/image"
-
 import { useQuery } from '@apollo/client';
 
 import sponsorsQuery from '@/graphql/queries/sponsors';
+
+import Button from '@/components/Button'
 
 export default function Sponsors() {
   const { data, loading, error } = useQuery(sponsorsQuery);
@@ -22,7 +22,10 @@ export default function Sponsors() {
 
   return (
     <section id="sponsors" className="border-2 border-solid border-lightGrey rounded-lg p-6 sm:p-10">
-      <h2 className="mb-4 text-4xl">Patrocinadores</h2>
+      <div className="flex justify-between">
+        <h2 className="mb-4 text-4xl">Patrocinadores</h2>
+        <Button href="https://drive.google.com/file/d/1TDD6CJFTu2LmoOWq8A_6xgUDvj10nv9y/view?usp=sharing" target="_blank">MidiaKit</Button>
+      </div>
       <div>
         <ul className="flex flex-wrap justify-center gap-4 overflow-hidden">
           {content?.map(renderSponsor)}
