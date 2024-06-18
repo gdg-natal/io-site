@@ -8,7 +8,7 @@ interface ISpeakerCardProps {
 export default function SpeakerCard({ name, description, title, image }: ISpeakerCardProps) {
   return (
     <li className="bg-lightGrey rounded-lg border-2 border-solid border-lightGrey min-w-[300px] snap-start">
-      <div id="profile-photo" className="bg-black rounded-lg py-8 bg-speakersBg bg-center bg-[length:300px] bg-no-repeat bg-[center_bottom]">
+      <div id="profile-photo" className="bg-black rounded-lg py-8 bg-speakersBg bg-center bg-[length:315px] bg-no-repeat bg-[-12px_bottom]">
         <figure className="w-40 h-40 mx-auto rounded-full overflow-hidden">
           <img src={image} alt={`${name} photo`} className="object-cover w-full h-full" />
         </figure>

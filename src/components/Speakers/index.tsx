@@ -7,9 +7,13 @@ import speakersQuery from '@/graphql/queries/speakers';
 export default function Speakers() {
   const { data, loading, error } = useQuery(speakersQuery);
   const content = data?.speakers?.data?.map((item: any) => {
+    const image = 
+    item.attributes?.image?.data?.attributes?.formats?.small?.url ||
+    item.attributes?.image?.data?.attributes?.formats?.thumbnail?.url
+
     return ({
       ...item.attributes,
-      image: item.attributes?.image?.data?.attributes?.formats?.small?.url
+      image
     })
   })
 
