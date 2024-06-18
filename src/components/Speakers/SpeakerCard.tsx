@@ -14,8 +14,8 @@ export default function SpeakerCard({ name, description, title, image }: ISpeake
         </figure>
       </div>
       <div className="text-black px-4 py-6">
-        <h2 className="font-bold text-lg text-center">{name}</h2>
-        <h3 className="mb-4 text-center text-sm">{title}</h3>
+        <h2 className="font-bold text-lg">{name}</h2>
+        <h3 className="mb-4 text-sm">{title}</h3>
         <p className="indent-2">{description}</p>
       </div>
     </li>
