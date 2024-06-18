@@ -18,7 +18,7 @@ export default function Explorer() {
         <aside>
           {!loading && <Countdown eventTime={content?.eventTime} />}
         </aside>
-        <aside className="p-16 flex flex-col items-start justify-center w-2/3">
+        <aside className="p-16 flex flex-col items-start justify-center lg:w-2/3">
           <h1 className="mb-4 text-4xl">{content?.title}</h1>
           <h2 className="mb-8 text-xl">{content?.description}</h2>
           <Button href={content?.registrationUrl} target="_blank">Registre-se</Button>

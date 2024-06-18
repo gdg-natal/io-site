@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <Explorer />
-      <div className="container mx-auto mt-32 gap-16 flex flex-col">
+      <div className="container mx-auto mt-32 gap-16 flex flex-col px-4">
         <About />
         <Location />
         <Sponsors />

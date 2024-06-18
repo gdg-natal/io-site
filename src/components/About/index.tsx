@@ -12,9 +12,9 @@ export default function About() {
 
   return (
     <section id="about" className="border-2 border-solid border-lightGrey rounded-lg bg-[url('/images/about-bg.png')] bg-right-bottom bg-no-repeat">
-      <aside className="w-1/2 p-10 pb-24">
+      <aside className="lg:w-1/2 p-6 sm:p-10 pb-52 md:pb-24">
         <h2 className="mb-4 text-4xl">{content?.title}</h2>
-        <h3 className="mb-8 text-xl">{content?.content}</h3>
+        <h3 className="mb-8 text-xl indent-2">{content?.content}</h3>
         <Button outlined href="#">Registre-se</Button>
       </aside>
     </section>

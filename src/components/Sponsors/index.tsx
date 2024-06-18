@@ -12,16 +12,16 @@ export default function Sponsors() {
     const imageUrl = image?.data?.attributes?.formats?.medium?.url
 
     return (
-      <li key={title} className="w-1/5 h-32">
+      <li key={title} className="w-1/2 sm:w-1/5 h-32">
         <a href="#">
-          <img src={imageUrl} alt={title} className="w-full h-full" />
+          <img src={imageUrl} alt={title} className="w-full h-full object-contain" />
         </a>
       </li>
     )
   }
 
   return (
-    <section id="sponsors" className="border-2 border-solid border-lightGrey rounded-lg p-10">
+    <section id="sponsors" className="border-2 border-solid border-lightGrey rounded-lg p-6 sm:p-10">
       <h2 className="mb-4 text-4xl">Patrocinadores</h2>
       <div>
         <ul className="flex flex-wrap justify-center gap-4 overflow-hidden">
