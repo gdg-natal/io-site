@@ -17,7 +17,7 @@ export default function Speakers() {
   return (
     <section id="speakers">
       <h2 className="mb-8 text-4xl">Palestrantes</h2>
-      <ul className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <ul className="flex gap-6 overflow-x-auto snap-mandatory snap-x">
         {content?.map(((item: any) => <SpeakerCard key={item.name} {...item} />))}
       </ul>
     </section>
