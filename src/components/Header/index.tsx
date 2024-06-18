@@ -9,13 +9,13 @@ export default function Header() {
         <figure>
           <Image src={logo} alt="Google I/O Extended 2024 - Natal" />
         </figure>
-        {/* <ul className="text-lightGrey flex px-8">
+        <ul className="text-lightGrey flex px-8">
           <li><a className="p-6 block" href="#explore">Explorar</a></li>
           <li><a className="p-6 block" href="#about">Sobre</a></li>
           <li><a className="p-6 block" href="#location">Localização</a></li>
           <li><a className="p-6 block" href="#sponsors">Patrocinadores</a></li>
           <li><a className="p-6 block" href="#speakers">Palestrantes</a></li>
-        </ul> */}
+        </ul>
       </div>
     </nav>
   )
