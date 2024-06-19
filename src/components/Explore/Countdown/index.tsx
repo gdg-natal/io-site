@@ -22,7 +22,7 @@ export default function Countdown({ eventTime }: ICountdownProps) {
   const countdown = useCountdown(eventTime)
 
   return (
-    <ul className={`grid grid-rows-2 grid-cols-2 gap-8`}>
+    <ul className={`w-full md:w-2/2 grid grid-cols-2  text-white/90 gap-4`}>
       {COUNTDOWN_ITEMS.map(({ label, field }, index) => (
         <CountValue key={index} label={label} index={index}>{countdown[field]}</CountValue>
       ))}
