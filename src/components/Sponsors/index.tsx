@@ -42,7 +42,6 @@ export default function Sponsors() {
     <section id="sponsors" className="border-2 border-solid border-lightGrey rounded-lg p-6 sm:p-10">
       <div className="flex justify-between">
         <h2 className="mb-4 text-4xl">Patrocinadores</h2>
-        <Button href="https://drive.google.com/file/d/1TDD6CJFTu2LmoOWq8A_6xgUDvj10nv9y/view?usp=sharing" target="_blank">MidiaKit</Button>
       </div>
       <div>
         <ul className="flex flex-wrap justify-center gap-4 overflow-hidden">

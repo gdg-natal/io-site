@@ -8,9 +8,11 @@ import { FiX } from "react-icons/fi";
 import { useState } from "react"
 
 export default function Header() {
-
   const [isOpen, setIsOpen] = useState(false)
-  const showMenu = () => setIsOpen(prev => !prev)
+
+  const handleMenu = () => setIsOpen(prev => !prev)
+
+  console.log('isopen', isOpen)
 
   const menuItems = [
     { tag: 'Explorar', href: 'explore' }, { tag: 'Sobre', href: 'about' }, { tag: 'Localização', href: 'location' },
@@ -19,30 +21,21 @@ export default function Header() {
 
   return (
     <nav className="border-b-2 border-solid border-lightGrey text-white/90">
-      <div className="w-full h-12 text-white py-4 px-4 md:px-8 flex items-center justify-between gap-4">
+      <div className="text-white flex items-center gap-4 container mx-auto px-4 justify-between relative">
         <figure>
           <Image src={logo} alt="Google I/O Extended 2024 - Natal" />
         </figure>
-        <ul className={`${!isOpen ? 'hidden md:flex md:flex-row' :
-          'flex flex-col items-start md:flex-row absolute md:relative py-10 md:py-0 top-12 left-0 md:top-auto'}
-              bg-[#202124] w-full gap-8 items-start md:justify-center px-8 md:px-2`}>
-          {
-            menuItems.map(item => {
-              return (
-                <li key={item.tag}
-                  className={`w-max cursor-pointer hover:[box-shadow:0_2px_0_white]`}>
-                  <a href={`#${item.href}`}>{item.tag}</a>
-                </li>
-              )
-            })
-          }
+        <ul className={`bg-[#202124] sm:pl-8 flex flex-col sm:flex-row w-full absolute sm:relative left-0 ${isOpen ? 'md:py-0 top-[100%]' : 'sm:visible invisible'}`} onClick={handleMenu}>
+          {menuItems.map(item => (
+            <li key={item.tag}
+              className={`cursor-pointer py-4 sm:py-6 p-6 sm:hover:[box-shadow:0_2px_0_gray] border-b-[1px] border-solid border-lightGrey sm:border-b-0`}>
+              <a href={`#${item.href}`}>{item.tag}</a>
+            </li>
+          ))}
         </ul>
 
-        <span className="flex md:hidden cursor-pointer "
-          onClick={showMenu}>
-          {
-            isOpen ? <FiX className="size-6" /> : <FiMenu className="size-6" />
-          }
+        <span className="flex md:hidden cursor-pointer p-4 -mr-4" onClick={handleMenu}>
+          {isOpen ? <FiX className="size-6" /> : <FiMenu className="size-6" />}
         </span>
       </div>
     </nav>

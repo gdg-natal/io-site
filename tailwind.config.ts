@@ -16,6 +16,7 @@ const config: Config = {
         lightGrey: '#eeeeee',
         royalBlue: '#2563EB',
         black: '#202124',
+        blackHover: '#18181B',
         linearFirstStart: '#3A7AED',
         linearFirstEnd: '#319E4F',
         linearSecondStart: '#319E4F',
