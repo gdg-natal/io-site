@@ -12,8 +12,6 @@ export default function Header() {
 
   const handleMenu = () => setIsOpen(prev => !prev)
 
-  console.log('isopen', isOpen)
-
   const menuItems = [
     { tag: 'Explorar', href: 'explore' }, { tag: 'Sobre', href: 'about' }, { tag: 'Localização', href: 'location' },
     { tag: 'Patrocinadores', href: 'sponsors' }, { tag: 'Palestrantes', href: 'speakers' }
