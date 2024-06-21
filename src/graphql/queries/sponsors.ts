@@ -6,14 +6,12 @@ const query = gql`
       data {
         id
         attributes {
-          items {
-            type
-            title
-            image {
-              data {
-                attributes {
-                  formats
-                }
+          type
+          title
+          image {
+            data {
+              attributes {
+                formats
               }
             }
           }

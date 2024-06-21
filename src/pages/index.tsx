@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Explorer from "@/components/Explore";
 import About from "@/components/About";
 import Location from "@/components/Location";
@@ -6,18 +8,18 @@ import Speakers from "@/components/Speakers";
 
 export default function Home() {
   return (
-    <main className="container flex flex-col w-full text-white/90">
-      <Explorer />
-<<<<<<< HEAD
-      <div className="container mx-auto mt-32 gap-16 flex flex-col px-4">
-=======
-      <div className="container md:px-16 px-4 w-full mt-32 gap-16 flex flex-col items-center">
->>>>>>> 60f96aa (fix responsive cards)
-        <About />
-        <Location />
-        <Sponsors />
-        <Speakers />
-      </div>
-    </main>
+    <>
+      <Header />
+      <main className="flex flex-col w-full text-white/90">
+        <Explorer />
+        <div className="container mx-auto mt-16 sm:mt-32 gap-16 flex flex-col px-4">
+          <About />
+          <Location />
+          <Sponsors />
+          <Speakers />
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 };
