@@ -33,16 +33,15 @@ body {
 
 @layer base {
   @font-face {
-    font-family: 'Google Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/googlesans/v59/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvbQoi-E.woff2) format('woff2');
+    src: url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap) format('woff2');
   };
   @font-face {
-    font-family: 'Google Sans';
-    font-style: normal; 
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
     font-weight: 700;
-    src: local('Google Sans Display Bold'),
-    url('./fonts/GoogleSansDisplay-Bold.ttf') format('woff');
-  }
+    src: url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap) format('woff2');
+  };
 }
