@@ -13,13 +13,13 @@ export default function Header() {
   const handleMenu = () => setIsOpen(prev => !prev)
 
   const menuItems = [
-    { tag: 'Explorar', href: 'explore' }, { tag: 'Sobre', href: 'about' }, { tag: 'Localização', href: 'location' },
+    { tag: 'Explorar', href: 'explorer' }, { tag: 'Sobre', href: 'about' }, { tag: 'Localização', href: 'location' },
     { tag: 'Patrocinadores', href: 'sponsors' }, { tag: 'Palestrantes', href: 'speakers' }
   ]
 
   return (
-    <nav className="border-b-2 border-solid border-lightGrey text-white/90">
-      <div className="text-white flex items-center gap-4 md:container mx-auto px-4 justify-between relative">
+    <nav className="fixed top-0 w-full z-50 border-b-2 border-solid border-lightGrey text-lightGrey">
+      <div className="flex items-center bg-[#202124] gap-4 md:container mx-auto px-4 justify-between relative">
         <figure>
           <Image src={logo} alt="Google I/O Extended 2024 - Natal" />
         </figure>
