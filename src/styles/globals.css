@@ -36,12 +36,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap) format('woff2');
+    src: url('./fonts/GoogleSansDisplay-Regular') format('woff2');
   };
   @font-face {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    src: url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap) format('woff2');
+    src: url('./fonts/GoogleSansDisplay-Bold.ttf') format('woff2');
   };
 }
