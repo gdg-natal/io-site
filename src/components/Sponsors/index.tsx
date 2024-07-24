@@ -2,8 +2,6 @@ import { useQuery } from '@apollo/client';
 
 import sponsorsQuery from '@/graphql/queries/sponsors';
 
-import Button from '@/components/Button';
-
 import type { StrapiCollectionType } from '@/types/Strapi';
 
 type FormattedData = {
