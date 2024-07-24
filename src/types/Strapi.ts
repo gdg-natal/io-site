@@ -18,7 +18,8 @@ export type StrapiCollectionType = {
               }
             }
           }
-        }
+        },
+        type: 'bronze' | 'silver' | 'gold' | 'helper'
       }
     }[]
   }
