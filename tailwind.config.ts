@@ -14,6 +14,7 @@ const config: Config = {
       },
       colors: {
         lightGrey: '#eeeeee',
+        lightGreyDarken: '#7F7F7F',
         royalBlue: '#2563EB',
         black: '#202124',
         blackHover: '#18181B',
@@ -28,6 +29,15 @@ const config: Config = {
       },
       fontFamily: {
         body: 'Google Sans'
+      },
+      keyframes: {
+        fade: {
+          '0%, 100%': { opacity: '0' },
+          '10%, 90%': { opacity: '1' },
+        }
+      },
+      animation: {
+        fade: 'fade 10s ease-in-out infinite',
       }
     },
   },

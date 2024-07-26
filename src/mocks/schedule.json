@@ -1,0 +1,57 @@
+{
+    "data": {
+        "genipabu": [
+            {
+                "id": "47lat2vvqoll6svvll5bchie5l",
+                "start": "2024-07-25T18:52:00-03:00",
+                "end": "2024-07-25T18:52:10-03:00",
+                "speaker": "Erick Machado",
+                "stage": "Palco Genipabu",
+                "title": "Conhecendo o Redis: Conceitos e Boas práticas",
+                "type": "Web",
+                "about": "Desenvolvedor backend Ruby há mais de 6 anos, já passei desde o serviço público até startups inovadoras como a Outgo. Atualmente Lider Técnico na Buzzmonitor.",
+                "role": "Software Engineer na Buzzmonitor",
+                "description": "Conceitos do Redis, básicos e avançados, vantagens e desvantagens, assim como casos de uso práticos e vivências pessoais de problemas vividos no dia a dia. Por fim, um resumo de boas práticas.",
+                "image": "https://res.cloudinary.com/dghznmzpy/image/upload/v1721079786/small_1_E9_AD_9_FA_E594_41_FD_BED_8_FCA_9_E196707_F_1_201_a_Allan_Kardec_Bass_528a89af8f.jpg"
+            },
+            {
+                "id": "1c5sciemkf4jbere36kqmp9abh",
+                "start": "2024-07-25T18:52:10-03:00",
+                "end": "2024-07-25T18:52:20-03:00",
+                "speaker": "Abertura"
+            },
+            {
+                "id": "6n8p9qinnjs2292vvsis0hs75p",
+                "start": "2024-07-25T18:52:20-03:00",
+                "end": "2024-07-25T18:52:30-03:00",
+                "speaker": "Women Techmakers",
+                "stage": "Palco Genipabu"
+            },
+            {
+                "id": "7krpg7uf6uc5jvv787e1jnnjjd",
+                "start": "2024-07-25T18:52:30-03:00",
+                "end": "2024-07-25T18:52:40-03:00",
+                "speaker": "Amanda Lefèvre, Carla Vieira e Camilla Martins",
+                "stage": "Palco Genipabu",
+                "title": "Mesa Redonda"
+            },
+            {
+                "id": "35e5bpsmgth2sbldqo2i28p8l3",
+                "start": "2024-07-25T18:52:40-03:00",
+                "end": "2024-07-25T18:52:50-03:00",
+                "speaker": "Coffee Break"
+            },
+            {
+                "id": "47lat2vvqoll6svvll5bchie5l",
+                "start": "2024-07-25T18:52:50-03:00",
+                "end": "2024-07-25T18:52:59-03:00",
+                "speaker": "Erick Machado",
+                "stage": "Palco Genipabu",
+                "title": "Conhecendo o Redis: Conceitos e Boas práticas",
+                "type": "Web",
+                "description": "Conceitos do Redis, básicos e avançados, vantagens e desvantagens, assim como casos de uso práticos e vivências pessoais de problemas vividos no dia a dia. Por fim, um resumo de boas práticas."
+            }
+        ]
+    },
+    "status": 200
+}

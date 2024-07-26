@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
 
-import locationQuery from '@/graphql/queries/location';
+import locationQuery from '@/services/queries/location';
 
 import Button from '@/components/Button'
 

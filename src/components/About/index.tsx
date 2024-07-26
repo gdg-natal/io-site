@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
 
-import aboutQuery from '@/graphql/queries/about';
+import aboutQuery from '@/services/queries/about';
 
 import { getContent } from '@/utils'
 

@@ -2,7 +2,7 @@ import { useQuery } from '@apollo/client';
 
 import SpeakerCard from "./SpeakerCard";
 
-import speakersQuery from '@/graphql/queries/speakers';
+import speakersQuery from '@/services/queries/speakers';
 
 export default function Speakers() {
   const { data, loading, error } = useQuery(speakersQuery);

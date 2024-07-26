@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
 
-import sponsorsQuery from '@/graphql/queries/sponsors';
+import sponsorsQuery from '@/services/queries/sponsors';
 
 import type { StrapiCollectionType } from '@/types/Strapi';
 

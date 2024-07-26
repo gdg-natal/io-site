@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
 import dynamic from 'next/dynamic'
 
-import exploreQuery from '@/graphql/queries/explore';
+import exploreQuery from '@/services/queries/explore';
 
 import Button from '@/components/Button'
 
