@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       backgroundImage: {
         aboutImage: "url('/images/about-bg.png')",
-        speakersBg: "url('/images/speakers-bg.png')"
+        speakersBg: "url('/images/speakers-bg.png')",
+        scheduleTVsBG: "url('/images/schedule-tvs-bg.png')"
       },
       colors: {
         lightGrey: '#eeeeee',

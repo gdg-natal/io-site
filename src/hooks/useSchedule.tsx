@@ -24,7 +24,7 @@ export default function useSchedule(stage: 'genipabu' | 'morro' | 'cajueiro') {
   }
   const handleData = useCallback(() => {
     const schedule = calendar?.[stage] ?? []
-    // const timeNow = new Date('2024-07-27T20:31:09.542Z').getTime()
+    // const timeNow = new Date('2024-07-27T12:31:09.542Z').getTime()
     const timeNow = new Date(Date.now()).getTime()
 
     setData({ now: getRunningNow(schedule, timeNow), next: getNext(schedule, timeNow) })
