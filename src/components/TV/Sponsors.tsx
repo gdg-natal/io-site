@@ -16,10 +16,10 @@ export default function SponsorsTV({ data }: any) {
   return (
     <>
       <h5 className="text-2xl font-bold mb-6 animate-fade">{isSponsors ? 'Patrocinio' : 'Apoio'}:</h5>
-      <ul className="flex justify-center items-center gap-2 animate-fade">
+      <ul className="flex justify-center items-center gap-8 animate-fade">
         {data[isSponsors ? 'sponsors' : 'helpers']?.map((item: any) => (
           <li key={item?.id}>
-            <Image src={item?.image} alt={item?.title} width={200} height={50} className="h-[50px] object-contain" />
+            <Image src={item?.image} alt={item?.title} width={200} height={70} className="h-[120px] max-w-[160px] object-contain" />
           </li>
         ))}
       </ul>
