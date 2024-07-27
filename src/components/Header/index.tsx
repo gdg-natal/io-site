@@ -6,6 +6,7 @@ import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 
 import { useState } from "react"
+import Button from "../Button";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,7 +19,7 @@ export default function Header() {
   ]
 
   return (
-    <nav className="fixed top-0 w-full z-50 border-b-2 border-solid border-lightGrey text-lightGrey">
+    <nav className="fixed top-0 w-full z-50 border-b-2 border-solid border-lightGrey text-lightGrey bg-black">
       <div className="flex items-center bg-black gap-4 md:container mx-auto px-4 justify-between relative">
         <figure>
           <Image src={logo} alt="Google I/O Extended 2024 - Natal" />
@@ -30,6 +31,9 @@ export default function Header() {
               <a href={`#${item.href}`}>{item.tag}</a>
             </li>
           ))}
+          <li className="md:flex items-center grow justify-end py-4 self-center">
+            <Button size="small" href="http://programacao.gdg.natal.br">Programação</Button>
+          </li>
         </ul>
         <span className="flex md:hidden cursor-pointer p-4 -mr-4" onClick={handleMenu}>
           {isOpen ? <FiX className="size-6" /> : <FiMenu className="size-6" />}

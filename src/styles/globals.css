@@ -29,13 +29,9 @@ html, body, body > div {
   height: 100%;
 }
 
-body {
-  background: #222831;
-}
-
 .live-icon {
   position: absolute;
-  left: 1.5rem;
+  left: 1rem;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 20px;
