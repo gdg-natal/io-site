@@ -24,6 +24,14 @@ export function useCountdown(target: string) {
       const minutes = Math.floor(seconds / MINUTE_IN_SECONDS)
       seconds = seconds % MINUTE_IN_SECONDS
 
+      if (rest < 0) return {
+        rest: 0,
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0
+      }
+
       return ({
         rest: rest - 1,
         days, hours, minutes, seconds
